@@ -1,0 +1,389 @@
+//
+//  XYNetEasyNews.pch
+//  XYNetEasyNews
+//
+//  Created by 李小亚 on 16/5/15.
+//  Copyright © 2016年 李小亚. All rights reserved.
+//
+
+
+/**
+ 
+ "iosnews", "Huabao", "yule", "specialRedian", "tiyu", "specialLocal", "specialSub", "caijing", "keji", "qiche", "nvren", "specialPicture", "specialComment", "fangchan", "specialLive", "qingsongyike", "specialJoke", "junshi", "lishi", "jiaju", "zhenhua", "youxi", "jiankang", "manhua", "dada", "caipiao", "specialGirl", "NBA", "shehui", "dianying", "zhongchao", "specialAnimal", "specialBoy", "specialBBS", "zhengwu", "qinggan", "jiaoyu", "specialBlog", "qinzi", "jiuxiang", "attitude open", "gongkaike", "paobu", "shuma", "shouji", "yidonghulianwang", "zuqiu", "baoxue", "dushu", "Art", "CBA", "lvyou
+ 
+    POST请求 responde为已经选中的频道
+ *  http://c.3g.163.com/nc/uc/fav/subs/bGl4aWFveWFfYUAxNjMuY29t.html
+ *
+    POST请求，获取用户的简介中的信息
+    http://c.3g.163.com/uc/api/visitor/v2/profile
+ 
+ GET请求 获取首页
+ http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html?from=toutiao&fn=1&passport=s5bIpjkdt3%2FBRUJRhRJsUBL7HDUxyPKDuqXg8sOgz5U%3D&devId=hm2kynpHxrQ8NZFOIU%2BJSS0YGBYFZ30%2F6to6oNDp%2F4pZ1QU6Eb3cEv5%2B8xCJKC85&size=20&version=8.1&spever=false&net=wifi&lat=&lon=&ts=1463391644&sign=nshOxheLMEvZPm8Z1bVEZNxcy8oaeS9kNqEe8I8n04d48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=appstore
+ 
+ {
+	"T1348647853363": [{
+ "ads": [{
+ "imgsrc": "http://img5.cache.netease.com/3g/2016/5/16/20160516183706d7e20.jpg",
+ "subtitle": "",
+ "tag": "photoset",
+ "title": "\"乞丐村\"老人扎堆 称给儿女减负",
+ "url": "00AP0001|118631"
+ }, {
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/20160516181331cf78f.jpg",
+ "subtitle": "",
+ "tag": "photoset",
+ "title": "英情侣收养刺猬 小家伙爱上泡澡",
+ "url": "00AO0001|118630"
+ }, {
+ "imgsrc": "http://img2.cache.netease.com/3g/2016/5/16/20160516161901df2d4.jpg",
+ "subtitle": "",
+ "tag": "photoset",
+ "title": "瑞士现世界最大海报 面积8千平米",
+ "url": "00AO0001|118624"
+ }, {
+ "imgsrc": "http://img5.cache.netease.com/3g/2016/5/16/20160516115107b083a.jpg",
+ "subtitle": "",
+ "tag": "photoset",
+ "title": "奥巴马获罗格斯大学荣誉博士学位",
+ "url": "00AO0001|118588"
+ }],
+ "clkNum": 0,
+ "docid": "9IG74V5H00963VRO_00AO0001|118639",
+ "hasAD": 1,
+ "hasHead": 1,
+ "img": "http://img4.cache.netease.com/3g/2016/5/16/20160516211502a18a0.jpg",
+ "imgType": 1,
+ "imgsrc": "http://img4.cache.netease.com/3g/2016/5/16/20160516211502a18a0.jpg",
+ "interest": "P",
+ "lmodify": "2016-05-16 21:13:23",
+ "photosetID": "00AO0001|118639",
+ "picCount": 0,
+ "program": "LTitleA",
+ "prompt": "成功为您推荐10条新内容",
+ "ptime": "2016-05-16 21:13:23",
+ "recSource": "图集",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 0,
+ "skipID": "00AO0001|118639",
+ "skipType": "photoset",
+ "subtitle": "",
+ "tag": "photoset",
+ "template": "normal1",
+ "title": "印尼遭暴雨引发洪水造成多人死亡"
+	}, {
+ "boardid": "news_guonei8_bbs",
+ "clkNum": 0,
+ "digest": "切实解决自身存在的突出问题，切实改进工作作风。",
+ "docid": "BN4PT7IL00014PRF",
+ "downTimes": 0,
+ "id": "BN4PT7IL00014PRF",
+ "img": "http://img5.cache.netease.com/3g/2016/5/15/20160515202825c3eb9.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img5.cache.netease.com/3g/2016/5/15/20160515202825c3eb9.jpg",
+ "interest": "S",
+ "lmodify": "2016-05-16 18:53:52",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-15 20:16:14",
+ "recReason": "突发新闻",
+ "recSource": "#",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 48572,
+ "replyid": "BN4PT7IL00014PRF",
+ "skipID": "S1451880983492",
+ "skipType": "special",
+ "source": "央视",
+ "specialID": "S1451880983492",
+ "template": "normal1",
+ "title": "习近平:打铁还需自身硬 工作作风问题绝不是小事",
+ "unlikeReason": ["国内/1", "来源:央视/4", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "boardid": "news_guonei8_bbs",
+ "clkNum": 0,
+ "digest": "房檐装3个摄像头，团伙成员9点上班，打电话打到下午5点。",
+ "docid": "BN776HUU0001124J",
+ "downTimes": 1,
+ "id": "BN776HUU0001124J",
+ "img": "http://img6.cache.netease.com/3g/2016/5/16/2016051619030594b59.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/2016051619030594b59.jpg",
+ "interest": "S",
+ "lmodify": "2016-05-16 19:45:58",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 18:47:00",
+ "recReason": "突发新闻",
+ "recSource": "#",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 12230,
+ "replyid": "BN776HUU0001124J",
+ "source": "澎湃新闻网",
+ "template": "normal1",
+ "title": "跨国电信诈骗窝点：住半山别墅 房檐装3个摄像头",
+ "unlikeReason": ["社会/1", "虚假新闻/6", "很黄很暴力/6", "内容重复/6"],
+ "upTimes": 1
+	}, {
+ "boardid": "3g_bbs",
+ "clkNum": 0,
+ "digest": "先被未婚夫挖眼致盲，再嫁后难忍丈夫家暴将其砍杀。",
+ "docid": "BN704QVD00963VRO",
+ "downTimes": 1,
+ "id": "BN704QVD00963VRO",
+ "img": "http://img6.cache.netease.com/3g/2016/5/16/2016051616472433fa9.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/2016051616472433fa9.jpg",
+ "interest": "A",
+ "lmodify": "2016-05-16 16:59:24",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 16:43:43",
+ "recReason": "网友热议",
+ "recSource": "新闻热点",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 20061,
+ "replyid": "BN704QVD00963VRO",
+ "source": "南方人物周刊",
+ "template": "normal1",
+ "title": "杀夫盲女受尽苦难 在入狱8年后终迎爱情的新生",
+ "unlikeReason": ["社会/1", "虚假新闻/6", "很黄很暴力/6", "来源:南方人物周刊/4", "内容重复/6"],
+ "upTimes": 1
+	}, {
+ "boardid": "money_bbs",
+ "clkNum": 0,
+ "digest": "2016年6月1日起不再受理新的个人账户综合理财业务。",
+ "docid": "BN7EIG0L00252H36",
+ "downTimes": 1,
+ "id": "BN7EIG0L00252H36",
+ "img": "http://img2.cache.netease.com/3g/2016/5/16/20160516205741c9753.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img2.cache.netease.com/3g/2016/5/16/20160516205741c9753.jpg",
+ "interest": "A",
+ "lmodify": "2016-05-16 21:35:56",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 20:55:51",
+ "recReason": "大家都在看",
+ "recSource": "新闻热点",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 8022,
+ "replyid": "BN7EIG0L00252H36",
+ "source": "财经网",
+ "template": "normal1",
+ "title": "工商银行宣布停止个人账户综合理财业务",
+ "unlikeReason": ["财经/1", "广告/6", "来源:财经网/4", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "boardid": "photoview_bbs",
+ "clkNum": 0,
+ "digest": "",
+ "docid": "9IG74V5H00963VRO_00AP0001|118580",
+ "downTimes": 0,
+ "id": "",
+ "img": "http://img4.cache.netease.com/3g/2016/5/16/201605161036365e3cd.jpg",
+ "imgType": 0,
+ "imgnewextra": [{
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/201605161036387e04e.jpg"
+ }, {
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/20160516103640254da.jpg"
+ }],
+ "imgsrc": "http://img4.cache.netease.com/3g/2016/5/16/201605161036365e3cd.jpg",
+ "interest": "A",
+ "lmodify": "2016-05-16 10:35:17",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 10:35:17",
+ "recReason": "网友热议",
+ "recSource": "图集",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 22211,
+ "replyid": "",
+ "skipID": "00AP0001|118580",
+ "skipType": "photoset",
+ "source": "网易综合",
+ "tag": "photoset",
+ "template": "normal1",
+ "title": "迎亲车内鞭炮爆炸 男子跳车死亡",
+ "unlikeReason": ["要闻/1", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "boardid": "ent2_bbs",
+ "clkNum": 0,
+ "digest": "方励这一跪在几天内就演绎出了电影史上的票房奇迹。",
+ "docid": "BN6AO39U000300B1",
+ "downTimes": 0,
+ "id": "BN6AO39U000300B1",
+ "img": "http://img2.cache.netease.com/3g/2016/5/16/201605161134181789f.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img2.cache.netease.com/3g/2016/5/16/201605161134181789f.jpg",
+ "interest": "A",
+ "lmodify": "2016-05-16 10:29:46",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 10:29:46",
+ "recReason": "大家都在看",
+ "recSource": "新闻热点",
+ "recType": 0,
+ "recprog": "LTitleA",
+ "replyCount": 6054,
+ "replyid": "BN6AO39U000300B1",
+ "source": "网易娱乐专稿",
+ "template": "normal1",
+ "title": "跪出奇迹！电影《百鸟朝凤》周末狂揽2100万",
+ "unlikeReason": ["娱乐/1", "很黄很暴力/6", "标题党/6", "百鸟朝凤/3", "来源:网易娱乐专稿/4", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "TAG": "本地:杭州",
+ "TAGS": "本地:杭州",
+ "boardid": "3g_bbs",
+ "clkNum": 0,
+ "digest": "环比前一周下降16.5%，城东新城板块成交火热。",
+ "docid": "BN61UB3700964LDH",
+ "downTimes": 0,
+ "id": "BN61UB3700964LDH",
+ "img": "http://img6.cache.netease.com/3g/2016/5/16/20160516075711d5bd8.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img6.cache.netease.com/3g/2016/5/16/20160516075711d5bd8.jpg",
+ "interest": "杭州",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 07:55:53",
+ "recReason": "杭州本地",
+ "recSource": "杭州本地",
+ "recType": 2,
+ "recprog": "LTitleA",
+ "replyCount": 124,
+ "replyid": "BN61UB3700964LDH",
+ "source": "都市快报",
+ "template": "normal1",
+ "title": "上周杭州新房成交2641套 人居展3天就卖了近七成",
+ "unlikeReason": ["本地错误/5", "来源:都市快报/4", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "TAG": "独家",
+ "TAGS": "独家",
+ "boardid": "tinyblog_bbs",
+ "clkNum": 0,
+ "digest": "在地图上未详细标注过的地方画个圈，买辆二手车出发了。",
+ "docid": "BN7AJB7N000465CI",
+ "downTimes": 0,
+ "id": "BN7AJB7N000465CI",
+ "img": "http://img4.cache.netease.com/3g/2016/5/16/20160516194751f2199.jpg",
+ "imgType": 1,
+ "imgsrc": "http://img4.cache.netease.com/3g/2016/5/16/20160516194751f2199.jpg",
+ "interest": "A+",
+ "lmodify": "2016-05-16 20:03:08",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 19:46:24",
+ "recSource": "独家",
+ "recType": -1,
+ "recprog": "LTitleA",
+ "replyCount": 946,
+ "replyid": "BN7AJB7N000465CI",
+ "source": "大国小民",
+ "template": "normal1",
+ "title": "地图上随手画个圈,他就单枪匹马过去了",
+ "unlikeReason": ["游戏/1", "广告/6", "来源:大国小民/4", "内容重复/6"],
+ "upTimes": 0
+	}, {
+ "TAG": "本地:杭州",
+ "TAGS": "本地:杭州",
+ "boardid": "3g_bbs",
+ "clkNum": 0,
+ "digest": "包括肉末凉拌面、鸡汁凉拌面等，动手做起来吧。",
+ "docid": "BN63LKHN00964LDH",
+ "downTimes": 0,
+ "id": "BN63LKHN00964LDH",
+ "img": "http://img2.cache.netease.com/3g/2016/5/16/201605160827267554d.jpg",
+ "imgType": 0,
+ "imgsrc": "http://img2.cache.netease.com/3g/2016/5/16/201605160827267554d.jpg",
+ "interest": "杭州",
+ "picCount": 0,
+ "program": "LTitleA",
+ "ptime": "2016-05-16 08:26:05",
+ "recReason": "杭州本地",
+ "recSource": "杭州本地",
+ "recType": 2,
+ "recprog": "LTitleA",
+ "replyCount": 1,
+ "replyid": "BN63LKHN00964LDH",
+ "source": "每天学点做饭技巧",
+ "template": "normal1",
+ "title": "10种开胃凉拌面 够吃一夏天！",
+ "unlikeReason": ["本地错误/5", "来源:每天学点做饭技巧/4", "内容重复/6"],
+ "upTimes": 0
+	}]
+ }
+ 
+ //GET 视频
+ http://c.3g.163.com/recommend/getChanListNews?channel=T1457068979049&passport=s5bIpjkdt3%2FBRUJRhRJsUBL7HDUxyPKDuqXg8sOgz5U%3D&devId=hm2kynpHxrQ8NZFOIU%2BJSS0YGBYFZ30%2F6to6oNDp%2F4pZ1QU6Eb3cEv5%2B8xCJKC85&size=10&version=8.1&spever=false&net=wifi&lat=bPCxbQ2vgGedS3r1Y3s10g%3D%3D&lon=UngUj%2FElCdpHG93Rvl7jjA%3D%3D&ts=1463393534&sign=wQy%2Bt7sT5T8%2FpB4pZ%2BBvcEFYZyZci2ZQ3YSpu7d7vNt48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=appstore
+ *  @param ... <#... description#>
+ *
+ *  @return <#return value description#>
+ */
+
+
+#ifndef XYNetEasyNews_pch
+#define XYNetEasyNews_pch
+
+#ifdef DEBUG//调试
+
+//#define XYLog(...) NSLog(__VA_ARGS__)
+#define XYLog(...) NSLog(@"%s\n %@\n\n", __func__, [NSString stringWithFormat:__VA_ARGS__])
+
+#else//发布
+
+#define XYLog(...)
+
+#endif
+
+
+#define XYKeyWindow [UIApplication sharedApplication].keyWindow
+#define XYScreenWidth [UIScreen mainScreen].bounds.size.width
+#define XYScreenHeight [UIScreen mainScreen].bounds.size.height
+//导航条和tabBar上文字的颜色
+#define XYTextColor [UIColor colorWithRed:0.619 green:0 blue:0 alpha:1]
+#define XYSubsBGColor [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:1]
+#define XYSubsBGColorAlpha [UIColor colorWithRed:0.941 green:0.941 blue:0.941 alpha:0.3]
+
+
+/**
+ *   CGFloat margin = 10;
+ NSInteger totalColumn = 4;
+ CGFloat w = (self.width - (totalColumn + 1) * margin) / totalColumn;
+ *
+ *  @return
+ */
+#define XYChannelMargin 10
+#define XYChannelTotalColumn 4
+#define XYChannelWidth (XYScreenWidth - (XYChannelTotalColumn + 1) * XYChannelMargin) / XYChannelTotalColumn
+
+//发出的通知的表示
+#define XYAddNewChannel      @"addNewSubs"
+#define XYAddNewChannelBtnOriginal @"addNewChannelBtnOriginal"
+
+#define XYSortDelBtnClick    @"sortDelBtnClick"
+#define XYDelChannelBtnClick @"delChannelBtnClick"
+
+#define XYHideChannelView       @"hideChannelsView"
+#define XYSelectedChannelIndex  @"selectedChannelIndex"
+#define XYChangeCurrentChannel  @"changeCurrentChannel"
+
+
+
+#import "UIView+AdjustFrame.h"
+#import "UIButton+XY.h"
+
+
+
+
+
+
+#endif /* XYNetEasyNews_pch */
