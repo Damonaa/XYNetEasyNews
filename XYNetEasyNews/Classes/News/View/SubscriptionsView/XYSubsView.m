@@ -38,6 +38,8 @@
         self.showsHorizontalScrollIndicator = NO;
         self.delegate = self;
         self.backgroundColor = XYSubsBGColor;
+        //监听滚动新闻容器，切换选中按钮
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollToChangeSubs:) name:XYScrollContainer object:nil];
     }
     return self;
 }
@@ -99,8 +101,10 @@
 - (void)subsBtnClick:(UIButton *)button{
     //取消之前选中的按钮
     self.selectedBtn.selected = NO;
+    [self.selectedBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //设置当前点击的按钮为选中
     button.selected = YES;
+    [button setTitleColor:XYTextColor forState:UIControlStateNormal];
     //动画效果
     [UIView animateWithDuration:0.2 animations:^{
         self.selectedBtn.titleLabel.font = [UIFont systemFontOfSize:16];
@@ -111,9 +115,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:XYSelectedChannelIndex object:self userInfo:@{XYSelectedChannelIndex: [NSNumber numberWithInteger:button.tag]}];
 
     self.selectedBtn = button;
-    
-
-
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -153,7 +154,16 @@
 //    XYLog(@"%f, %d", selectedX, index);
 }
 
+- (void)scrollToChangeSubs:(NSNotification *)noti{
+    UIButton *currentBtn = noti.userInfo[XYScrollContainer];
+    self.selectedBtn.selected = NO;
+    
+    currentBtn.selected = YES;
+    
+    self.selectedBtn = currentBtn;
+}
 - (void)dealloc{
     XYLog(@"destory");
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

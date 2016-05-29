@@ -73,7 +73,7 @@
     UIButton *btn = [self buttonWithType:UIButtonTypeCustom];
     if (title) {
         [btn setTitle:title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setTitleColor:XYTextColor forState:UIControlStateSelected];
         btn.titleLabel.font = [UIFont systemFontOfSize:16];
     }

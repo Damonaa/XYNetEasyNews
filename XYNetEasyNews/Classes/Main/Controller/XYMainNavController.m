@@ -7,10 +7,13 @@
 //
 
 #import "XYMainNavController.h"
+#import "XYPhotoAlbumController.h"
 
 @interface XYMainNavController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, strong) id popDelegate;
+
+@property (nonatomic, weak) UIView *navBarView;
 
 @end
 
@@ -20,7 +23,7 @@
 + (void)initialize{
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];
     //设置navigation的背景图片
-    [bar setBackgroundImage:[UIImage imageNamed:@"top_navigation_background"] forBarMetrics:UIBarMetricsDefault];
+//    [bar setBackgroundImage:[UIImage imageNamed:@"top_navigation_background"] forBarMetrics:UIBarMetricsDefault];
     
     //设置nav的字体
     NSMutableDictionary *navAttr = [NSMutableDictionary dictionary];
@@ -65,11 +68,31 @@
 
 
 //设置手势代理
+//已经过渡到下一个控制器
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (viewController == self.viewControllers[0]) {//是第一个控制器。则还原手势代理
         self.interactivePopGestureRecognizer.delegate = self.popDelegate;
     }else{
         self.interactivePopGestureRecognizer.delegate = nil;
+    }
+}
+//将要过渡要下一个控制器
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if ([viewController isKindOfClass:[XYPhotoAlbumController class]]) {
+        for (UIView *view in self.view.subviews) {
+            if ([view isKindOfClass:NSClassFromString(@"UINavigationBar")]) {
+//                XYLog(@"%@", view);
+                self.navBarView = view;
+                [view removeFromSuperview];
+            }
+        }
+        
+    }else{
+        [self.view addSubview:_navBarView];
+        
+        [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"top_navigation_background"] forBarMetrics:UIBarMetricsDefault];
+//        self.navigationBar.alpha = 1.0;
+        
     }
 }
 

@@ -8,6 +8,7 @@
 
 #import "XYAddSubsView.h"
 
+
 @interface XYAddSubsView ()
 //遮盖用的背景
 @property (nonatomic, weak) UIView *coverView;
@@ -24,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupChildView];
+        
     }
     return self;
 }

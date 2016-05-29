@@ -11,6 +11,7 @@
 #import "XYSubsTool.h"
 #import "XYSubscription.h"
 #import "XYSubsButton.h"
+#import "UIImage+XY.h"
 
 @interface XYSubsChannelView ()
 /**
@@ -59,6 +60,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.contentSize = CGSizeMake(0, 750);
+        self.backgroundColor = [UIColor colorWithWhite:1.000 alpha:0.856];
         [self setupChildView];
         
         //监听通知
@@ -89,10 +91,6 @@
     subsChannelsView.width = XYScreenWidth;
 
     [self addSubview:subsChannelsView];
-    
-    
-    
-    
     //添加频道提示栏
     UILabel *remindLable = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(subsChannelsView.frame) + 10, XYScreenWidth, 30)];
     self.remindLable = remindLable;
